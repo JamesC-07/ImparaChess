@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti – ImparaChess</title>
+    <meta name="description" content="Contatta ImparaChess per iniziare le tue lezioni di scacchi. Prima sessione conoscitiva gratuita.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contatto-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--nero);
+            margin-bottom: 16px;
+        }
+
+        .contatto-info p {
+            color: var(--testo-morbido);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .contatto-voce {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px solid var(--bordo);
+        }
+
+        .contatto-voce:last-child { border-bottom: none; }
+
+        .contatto-voce .icona {
+            background: var(--nero);
+            color: var(--oro);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            flex-shrink: 0;
+        }
+
+        .contatto-voce .testo strong {
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--testo-morbido);
+            margin-bottom: 2px;
+        }
+
+        .contatto-voce .testo a,
+        .contatto-voce .testo span {
+            font-size: 17px;
+            color: var(--nero);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contatto-voce .testo a:hover { color: var(--oro); }
+
+        .nota-gratuita {
+            background: var(--oro-sfondo);
+            border: 1px solid var(--bordo);
+            border-left: 4px solid var(--oro);
+            padding: 16px 20px;
+            font-size: 15px;
+            color: var(--testo-morbido);
+            margin-top: 32px;
+        }
+
+        .nota-gratuita strong { color: var(--nero); }
+
+        .centro-contatti {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="index.html" class="logo">Impara<span>Chess</span></a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contenuti.html">Cosa imparo</a></li>
+                <li><a href="contatti.html" class="active">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<div class="page-hero">
+    <div class="container">
+        <h1><em>Contattami</em></h1>
+        <p>La prima sessione conoscitiva è gratuita. Nessun impegno.</p>
+    </div>
+</div>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<section>
+    <div class="container">
+        <div class="centro-contatti">
+
+            <div class="contatto-info">
+                <h2>Come raggiungermi</h2>
+                <p>Scrivi per qualsiasi domanda: da dove iniziare, come funzionano le lezioni, o solo per capire se ImparaChess fa al caso tuo. Rispondo entro 24 ore.</p>
+
+                <div class="contatto-voce">
+                    <div class="icona"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="testo">
+                        <strong>Email</strong>
+                        <a href="mailto:tua@email.com">tua@email.com</a>
+                    </div>
+                </div>
+
+                <div class="contatto-voce">
+                    <div class="icona"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="testo">
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/39XXXXXXXXXX" target="_blank">+39 XXX XXX XXXX</a>
+                    </div>
+                </div>
+
+                <div class="contatto-voce">
+                    <div class="icona"><i class="fa-solid fa-clock"></i></div>
+                    <div class="testo">
+                        <strong>Risposta</strong>
+                        <span>Entro 24 ore</span>
+                    </div>
+                </div>
+
+                <div class="contatto-voce">
+                    <div class="icona"><i class="fa-solid fa-video"></i></div>
+                    <div class="testo">
+                        <strong>Lezioni</strong>
+                        <span>Online via Google Meet o Zoom</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nota-gratuita">
+                <strong>Ricorda:</strong> la call conoscitiva è completamente gratuita. Parliamo dei tuoi obiettivi, del tuo livello e di come posso aiutarti a migliorare.
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contenuti.html">Cosa imparo</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 ImparaChess · Lezioni di scacchi personalizzate</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+}
+</script>
+</body>
+</html>

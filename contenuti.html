@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosa imparo – ImparaChess</title>
+    <meta name="description" content="Il percorso di ImparaChess: dalle regole base fino alla strategia avanzata. Scopri i moduli e cosa imparerai.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .modulo {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--bordo);
+        }
+        .modulo:last-child { border-bottom: none; }
+
+        .modulo-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .modulo-numero {
+            background: var(--oro);
+            color: var(--nero);
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 900;
+            width: 52px;
+            height: 52px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .modulo-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: var(--nero);
+            font-weight: 700;
+        }
+
+        .prereq-badge {
+            display: inline-block;
+            background: var(--bordo);
+            color: var(--marrone);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 2px;
+            margin-bottom: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .modulo-intro {
+            font-size: 18px;
+            color: var(--testo-morbido);
+            margin-bottom: 36px;
+            max-width: 680px;
+            line-height: 1.7;
+        }
+
+        .argomenti {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-bottom: 32px;
+        }
+
+        .argomento {
+            background: var(--oro-sfondo);
+            border-left: 4px solid var(--oro);
+            padding: 18px 20px;
+        }
+
+        .argomento h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--nero);
+            margin-bottom: 6px;
+        }
+
+        .argomento p {
+            font-size: 15px;
+            color: var(--testo-morbido);
+            line-height: 1.5;
+        }
+
+        .risultato {
+            background: var(--nero);
+            color: var(--bianco-avorio);
+            padding: 20px 28px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            max-width: 640px;
+            border-left: 4px solid var(--oro);
+        }
+
+        .risultato strong { color: var(--oro); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="index.html" class="logo">Impara<span>Chess</span></a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contenuti.html" class="active">Cosa imparo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<div class="page-hero">
+    <div class="container">
+        <h1>Cosa <em>imparerai</em></h1>
+        <p>Un percorso progressivo, dalla prima mossa fino a un gioco solido e consapevole.</p>
+    </div>
+</div>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<div class="container">
+
+    <!-- MODULO 1 -->
+    <div class="modulo">
+        <div class="modulo-header">
+            <div class="modulo-numero">1</div>
+            <h2>Le basi: regole e movimento</h2>
+        </div>
+        <div class="prereq-badge">Nessun prerequisito</div>
+        <p class="modulo-intro">
+            Il punto di partenza per chi non ha mai mosso un pezzo. Impari il funzionamento di ogni pezzo, le regole speciali e come si vince una partita. Niente dato per scontato.
+        </p>
+        <div class="argomenti">
+            <div class="argomento">
+                <h4>La scacchiera</h4>
+                <p>Orientamento, notazione algebrica, colori e coordinate.</p>
+            </div>
+            <div class="argomento">
+                <h4>I pezzi</h4>
+                <p>Come si muove e cattura ogni pezzo: re, donna, torre, alfiere, cavallo, pedone.</p>
+            </div>
+            <div class="argomento">
+                <h4>Mosse speciali</h4>
+                <p>Arrocco, en passant, promozione del pedone.</p>
+            </div>
+            <div class="argomento">
+                <h4>Scacco, matto e stallo</h4>
+                <p>Come si vince, come si pareggia, come si riconosce una posizione di pericolo.</p>
+            </div>
+        </div>
+        <div class="risultato">
+            <span><strong>Al termine:</strong> sai giocare una partita completa rispettando tutte le regole, e leggi e scrivi le mosse in notazione algebrica.</span>
+        </div>
+    </div>
+
+    <!-- MODULO 2 -->
+    <div class="modulo">
+        <div class="modulo-header">
+            <div class="modulo-numero">2</div>
+            <h2>I principi dell'apertura</h2>
+        </div>
+        <div class="prereq-badge">Prerequisito: Modulo 1</div>
+        <p class="modulo-intro">
+            Le prime 10 mosse determinano spesso l'intera partita. Impari i principi universali dell'apertura — non a memoria, ma capendo il perché dietro ogni mossa.
+        </p>
+        <div class="argomenti">
+            <div class="argomento">
+                <h4>Controllo del centro</h4>
+                <p>Perché le 4 case centrali sono fondamentali e come conquistarle.</p>
+            </div>
+            <div class="argomento">
+                <h4>Sviluppo dei pezzi</h4>
+                <p>L'ordine in cui portare i pezzi in gioco e gli errori più comuni.</p>
+            </div>
+            <div class="argomento">
+                <h4>Sicurezza del re</h4>
+                <p>Quando e come arroccare, e perché è quasi sempre una buona idea.</p>
+            </div>
+            <div class="argomento">
+                <h4>Aperture principali</h4>
+                <p>Un repertorio semplice per il bianco e il nero, con le idee principali.</p>
+            </div>
+        </div>
+        <div class="risultato">
+            <span><strong>Al termine:</strong> esci dall'apertura con una posizione solida, pezzi sviluppati e re al sicuro — ogni volta.</span>
+        </div>
+    </div>
+
+    <!-- MODULO 3 -->
+    <div class="modulo">
+        <div class="modulo-header">
+            <div class="modulo-numero">3</div>
+            <h2>Tattiche: il calcolo delle varianti</h2>
+        </div>
+        <div class="prereq-badge">Prerequisito: Modulo 2</div>
+        <p class="modulo-intro">
+            Le tattiche sono le "bombe" degli scacchi: mosse che cambiano la partita in pochi turni. Impari a riconoscere e a eseguire i pattern più frequenti, e soprattutto ad allenarli.
+        </p>
+        <div class="argomenti">
+            <div class="argomento">
+                <h4>Forchetta e doppio attacco</h4>
+                <p>Come attaccare due pezzi avversari contemporaneamente con un solo pezzo.</p>
+            </div>
+            <div class="argomento">
+                <h4>Inchiodatura e infilata</h4>
+                <p>Sfruttare l'allineamento dei pezzi per guadagnare materiale.</p>
+            </div>
+            <div class="argomento">
+                <h4>Sacrificio e combinazione</h4>
+                <p>Cedere materiale per ottenere un vantaggio decisivo.</p>
+            </div>
+            <div class="argomento">
+                <h4>Matti in 1, 2, 3 mosse</h4>
+                <p>Riconoscere le posizioni di matto e calcolare le varianti con precisione.</p>
+            </div>
+        </div>
+        <div class="risultato">
+            <span><strong>Al termine:</strong> riconosci i principali pattern tattici e sai come calcolare le varianti prima di muovere.</span>
+        </div>
+    </div>
+
+    <!-- MODULO 4 -->
+    <div class="modulo">
+        <div class="modulo-header">
+            <div class="modulo-numero">4</div>
+            <h2>Strategia e mediogioco</h2>
+        </div>
+        <div class="prereq-badge">Prerequisito: Modulo 3</div>
+        <p class="modulo-intro">
+            La fase più ricca della partita. Impari a costruire piani, a valutare la posizione e a capire perché certe mosse sono buone anche senza calcolare tutto.
+        </p>
+        <div class="argomenti">
+            <div class="argomento">
+                <h4>Valutazione della posizione</h4>
+                <p>Come capire se stai vincendo, pareggiando o perdendo in un colpo d'occhio.</p>
+            </div>
+            <div class="argomento">
+                <h4>Struttura dei pedoni</h4>
+                <p>Pedoni isolati, doppiati, passati: cosa significa e come sfruttarli.</p>
+            </div>
+            <div class="argomento">
+                <h4>Case deboli e forti</h4>
+                <p>Come identificare le case che i pezzi avversari non possono difendere.</p>
+            </div>
+            <div class="argomento">
+                <h4>Costruire un piano</h4>
+                <p>Come decidere cosa fare quando non c'è una tattica immediata da calcolare.</p>
+            </div>
+        </div>
+        <div class="risultato">
+            <span><strong>Al termine:</strong> sai costruire un piano strategico nel mediogioco e non ti ritrovi a muovere "a caso" nelle fasi tranquille della partita.</span>
+        </div>
+    </div>
+
+    <!-- MODULO 5 -->
+    <div class="modulo">
+        <div class="modulo-header">
+            <div class="modulo-numero">5</div>
+            <h2>I finali</h2>
+        </div>
+        <div class="prereq-badge">Prerequisito: Modulo 4</div>
+        <p class="modulo-intro">
+            La fase più tecnica e spesso trascurata. Saper vincere (o salvare) un finale fa la differenza tra un giocatore mediocre e uno solido. Impari i finali essenziali che ogni giocatore deve conoscere.
+        </p>
+        <div class="argomenti">
+            <div class="argomento">
+                <h4>Re e pedone</h4>
+                <p>Il finale più comune: quando si vince, quando si pareggia, la regola del quadrato.</p>
+            </div>
+            <div class="argomento">
+                <h4>Finale di torre</h4>
+                <p>La posizione di Lucena, la difesa Philidor, come battere re e torre con torre.</p>
+            </div>
+            <div class="argomento">
+                <h4>Finale di donna e alfieri</h4>
+                <p>Fondamentali per convertire un vantaggio materiale in vittoria.</p>
+            </div>
+            <div class="argomento">
+                <h4>Tecnica di conversione</h4>
+                <p>Come semplificare la posizione e evitare le trappole negli ultimi turni.</p>
+            </div>
+        </div>
+        <div class="risultato">
+            <span><strong>Al termine:</strong> sai convertire i finali più comuni e non perdi partite che dovresti vincere. Un vantaggio reale nel tuo Elo.</span>
+        </div>
+    </div>
+
+</div>
+
+<section style="background: var(--nero); padding: 64px 0; text-align:center; color:var(--bianco-avorio); border-top: 2px solid var(--oro);">
+    <div class="container">
+        <div style="font-family:'Playfair Display',serif; font-size:34px; margin-bottom:14px; font-weight:700;">Sei interessato?</div>
+        <p style="font-size:18px; opacity:0.82; margin-bottom:32px;">Fissiamo una call conoscitiva gratuita. Nessun impegno.</p>
+        <a href="contatti.html" class="btn">Contattami</a>
+    </div>
+</section>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contenuti.html">Cosa imparo</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 ImparaChess · Lezioni di scacchi personalizzate</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+}
+</script>
+</body>
+</html>

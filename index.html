@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImparaChess</title>
+    <meta name="description" content="ImparaChess: lezioni di scacchi pratiche e chiare per principianti e giocatori intermedi. Impara a ragionare, a pianificare e a vincere.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="index.html" class="logo">Impara<span>Chess</span></a>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contenuti.html">Cosa imparo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-badge">Lezioni di scacchi</div>
+        <h1>Gli scacchi spiegati<br><em>davvero bene</em></h1>
+        <p>Un percorso personalizzato, da zero fino al livello intermedio — senza gergo inutile.</p>
+        <a href="contenuti.html" class="btn">Scopri il percorso</a>
+        <a href="contatti.html" class="btn btn-outline">Contattami</a>
+    </div>
+</section>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<section>
+    <div class="container">
+        <div class="section-title">Come funziona</div>
+        <p class="section-sub">Il percorso è pensato per chi ha sempre voluto imparare gli scacchi (o per chi ha già le basi ma non sa come migliorare). Lavoriamo insieme, con una lezione a settimana, seguendo i tuoi obiettivi.</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">♟️</div>
+                <h3>Lezioni 1-1</h3>
+                <p>Una sessione individuale ogni settimana. Impari al tuo ritmo, senza fretta, con attenzione ai tuoi punti deboli.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <h3>Materiale incluso</h3>
+                <p>Schede, diagrammi e posizioni da ripassare tra una lezione e l'altra. Tutto chiaro e pronto da consultare.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💬</div>
+                <h3>Sempre disponibile</h3>
+                <p>Hai un dubbio durante la settimana? Scrivimi. Rispondo e ti aiuto senza aspettare la lezione successiva.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Flessibilità</h3>
+                <p>Vuoi migliorare più in fretta? Hai un obiettivo specifico, come un torneo o battere un amico? Organizziamo di conseguenza.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Pensiero strategico</h3>
+                <p>Gli scacchi insegnano a pianificare, valutare le conseguenze e prendere decisioni migliori — nella partita e nella vita.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📈</div>
+                <h3>Progressione misurabile</h3>
+                <p>Il tuo Elo crescerà. Monitoriamo i progressi e adattiamo il percorso di conseguenza.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sfondo-avorio">
+    <div class="container" style="text-align:center;">
+        <div class="section-title">Pronto a fare la <span class="oro">prima mossa</span>?</div>
+        <p class="section-sub" style="margin: 0 auto 36px; text-align:center;">Prenota una call conoscitiva gratuita. Parliamo dei tuoi obiettivi.</p>
+        <a href="contatti.html" class="btn" style="font-size:16px; padding: 16px 44px;">Contattami ora</a>
+    </div>
+</section>
+
+<div class="chess-strip">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contenuti.html">Cosa imparo</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 ImparaChess · Lezioni di scacchi personalizzate</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+}
+</script>
+</body>
+</html>
